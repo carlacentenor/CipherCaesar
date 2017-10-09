@@ -27,23 +27,27 @@ Para la función **cipher** se implemento lo siguiente :
 *  Implementar un for que recorra la cadena , letra por letra para ir cambiandola según la fórmula del cifrado de Cesar.
 *  Dentro del **for** creamos una variable  numberCodeAscii
 que obtiene el código ASCII de la letra recorrida .
+```javascript
 var numberCodeAscii = string.charCodeAt(i);
+```
 * Condicionar el valor del código ASCII según los rangos establecidos.
     *  Mayor o igual que 65 y menor o igual que 90 , para letras mayúsculas.
     * Mayor o igual que 97 y menor o igual que 122, para letras minúsculas.
 *  Si es mayúscula :
     * Asignar a una variable **valueCapitalLetter** el valor obtenido según la fórmula . Este valor es el nuevo código ASCII de la letra.
-
+```javascript
 var valueCapitalLetter = (numberCodeAscii-65 +33)%26 + 65;
+```
 * Si es minúscula :
 
     * Asignar a una variable **valueLetterLower** el valor obtenido según la fórmula . Este valor es el nuevo código ASCII de la letra.
-
+```javascript
     var valueLetterLower = (numberCodeAscii-97 +33)%26 +97;
-
-* Convertir el código ASCII obtenido a una letra del alfabeto
+```
+* Convertir el código ASCII obtenido a una letra del alfabeto.
+```javascript
   var capitalLetter= String.fromCharCode(letter);
-
+```
 *  Concatenar cada nueva letra obtenida a la variable codeCipher.
 
 *  Mostrar la palabra convertida en la página web Cifrado.html.
@@ -58,24 +62,27 @@ Para la función **deCipher** se implemento lo siguiente :
 *  Implementar un for que recorra la cadena , letra por letra para ir cambiandola según la fórmula del cifrado de Cesar.
 *  Dentro del **for** creamos una variable  numberCodeAscii
 que obtiene el código ASCII de la letra recorrida .
+```javascript
 var numberCodeAscii = string.charCodeAt(i);
+```
 * Condicionar el valor del código ASCII según los rangos establecidos.
     *  Mayor o igual que 65 y menor o igual que 90 , para letras mayúsculas.
     * Mayor o igual que 97 y menor o igual que 122, para letras minúsculas.
 *  Si es mayúscula :
     * Asignar a una variable **valueCapitalLetter** el valor obtenido según la fórmula . Este valor es el nuevo código ASCII de la letra.
-
+```javascript
 var valueCapitalLetter = (numberCodeAscii+65)-33%26-65
-
+```
 * Si es minúscula :
 
     * Asignar a una variable **valueLetterLower** el valor obtenido según la fórmula . Este valor es el nuevo código ASCII de la letra.
-
+```javascript
 var valueLetterLower =  (numberCodeAscii+97)-33%26-97
-
+```
 * Convertir el código ASCII obtenido a una letra del alfabeto
+```javascript
   var capitalLetter= String.fromCharCode(letter);
-
+```
 *  Concatenar cada nueva letra obtenida a la variable codeCipher.
 
 *  Mostrar la palabra convertida en la página web Cifrado.html.
