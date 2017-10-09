@@ -3,6 +3,12 @@
 La siguiente web ha sido diseñada para cifrar y descifrar palabras según el algoritmo del cifrado de Cesar.
 Más información sobre el cifrado de Cesar en el siguiente link: [Caesar_cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
 
+Diagrama de flujo Cifrado :
+![Con titulo](cifrado.png "Cifrado")
+Diagrama de flujo Descifrado :
+
+![Con titulo](Decifrado.png "Decifrado")
+
 La web esta conformada por un página principal llamada Index.html que contiene dos vinculos :
 
 * Cifrado :  En esta página se implementa la función de cifrar.
@@ -14,10 +20,10 @@ Ambas páginas obtienen la entrada de datos mediante un **prompt** .
 ### Especificaciones de la función Cipher
 
 Para la función **cipher** se implemento lo siguiente :
-
+*  Validar que no se ingrese números ni que el campo este vacio.
 *  Crear una variable string con valor obtenido mediante un prompt ("Ingrese texto a codificar").
 *  Crear una variable codeCipher con valor = "", donde se va a concatenar los valores ya codificados y este valor es que el se va a mostrar como resultado final del cifrado.
-*  Validar que no se ingrese números ni que el campo este vacio.
+
 *  Implementar un for que recorra la cadena , letra por letra para ir cambiandola según la fórmula del cifrado de Cesar.
 *  Dentro del **for** creamos una variable  numberCodeAscii
 que obtiene el código ASCII de la letra recorrida .

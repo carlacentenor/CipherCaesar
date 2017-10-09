@@ -1,16 +1,20 @@
 function cipher(){
-    var string =prompt("Ingrese un texto")
+
+
+    do{
+      var string = prompt("Ingrese un texto")
+    }
+      while(!string )
+
     var codeCipher ="";
-  //  if(!string || typeof string =="number"){
-    //    alert("Ingresa solo texto");
-    //}
+
 
     for(i=0;i<string.length;i++){
         var numberCodeAscii = string.charCodeAt(i); // obtenemos el código ASCII
         if(numberCodeAscii>=65 && numberCodeAscii<=90){ // condición codigo ASCII (Valores Mayusculas)
-        var valueCapitalLetter = (numberCodeAscii-65 +33)%26 + 65; // Obtener el nuevo código ASCII mediante fórmula
-        var capitalLetter= String.fromCharCode(letter); // convierte el nuevo ASCII en una letra del alfabeto
-        codeCipher+=capitalLetter; // concatenamos para formar la palabra
+            var valueCapitalLetter = (numberCodeAscii-65 +33)%26 + 65; // Obtener el nuevo código ASCII mediante fórmula
+            var capitalLetter= String.fromCharCode(letter); // convierte el nuevo ASCII en una letra del alfabeto
+            codeCipher+=capitalLetter; // concatenamos para formar la palabra
 
         }
         else if (numberCodeAscii>=97 && numberCodeAscii<=122) { // condición código ASCII (Valores minúsculas)
