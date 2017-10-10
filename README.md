@@ -59,7 +59,7 @@ var valueCapitalLetter = (numberCodeAscii-65 +33)%26 + 65;
 *  Concatenar cada nueva letra obtenida a la variable codeCipher.
 * Si hay un espacio, solo se reasigna su valor y se concatena.
 
-*  Mostrar la palabra convertida en la página web Cifrado.html.
+*  Mostrar la palabra convertida en la página web Index.html.
 
 ### Especificaciones de la función decipher
 
@@ -93,4 +93,4 @@ var valueLetterLower =  (numberCodeAscii+97)-45%26-97
 *  Concatenar cada nueva letra obtenida a la variable codeCipher.
 
 * Si hay un espacio, solo se reasigna su valor y se concatena.
-*  Mostrar la palabra convertida en la página web Cifrado.html.
+*  Mostrar la palabra convertida en la página web Index.html.
