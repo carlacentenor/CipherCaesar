@@ -30,7 +30,7 @@ if(num==="1"){
                   codeCipher+=letterLower; // concatenar para formar la nueva palabra
 
                 }
-              else if(numberCodeAscii==32){
+              else if(numberCodeAscii==32){  // si el caracter es un espacio vacio
                     var space = " ";
                     codeCipher+=space;
                 }
