@@ -52,6 +52,7 @@ var valueCapitalLetter = (numberCodeAscii-65 +33)%26 + 65;
 * Si es minúscula :
 
     * Asignar a una variable **valueLetterLower** el valor obtenido según la fórmula . Este valor es el nuevo código ASCII de la letra.
+    
 ```javascript
     var valueLetterLower = (numberCodeAscii-97 +33)%26 +97;
 ```
