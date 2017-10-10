@@ -12,9 +12,10 @@ Diagrama de flujo Descifrado :
 La web esta conformada por un página principal llamada Index.html que contiene dos funciones de javascript que se ejecutan mediante un **prompt** :
 
 * Opción 1 : Cifrado César
-* Opción 2 : Decifrado César
+* Opción 2 : Descifrado César
+* Existe una validación si el usuario ingresa otra opción no mencionada, mostrará el mensaje "Ingrese una opción válida".
 
-Ambas opciones obtienen la entrada de datos mediante un **prompt** y muetsra el texto convertido en la página web.
+Ambas opciones obtienen la entrada de datos mediante un **prompt** y muestra el texto convertido en la página web.
 
 
 ### Especificaciones de la función Cipher
@@ -55,9 +56,6 @@ var valueCapitalLetter = (numberCodeAscii-65 +33)%26 + 65;
     var valueLetterLower = (numberCodeAscii-97 +33)%26 +97;
 ```
 * Convertir el código ASCII obtenido a una letra del alfabeto.
-```javascript
-  var capitalLetter= String.fromCharCode(letter);
-```
 *  Concatenar cada nueva letra obtenida a la variable codeCipher.
 * Si hay un espacio, solo se reasigna su valor y se concatena.
 
@@ -91,9 +89,7 @@ var valueCapitalLetter = (numberCodeAscii+65-33)%26+65 ;
 var valueLetterLower =  (numberCodeAscii+97)-45%26-97
 ```
 * Convertir el código ASCII obtenido a una letra del alfabeto
-```javascript
-  var capitalLetter= String.fromCharCode(letter);
-```
+
 *  Concatenar cada nueva letra obtenida a la variable codeCipher.
 
 * Si hay un espacio, solo se reasigna su valor y se concatena.
