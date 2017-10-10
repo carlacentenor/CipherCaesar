@@ -1,4 +1,5 @@
 
+// Creación de menú dentro de un prompt que permita el acceso a las dos funciones
 var num = prompt("Ingrese opción \n 1. Codificar en Cesar \n 2. Decodificar en Cesar");
 
 if(num==="1"){
@@ -48,7 +49,7 @@ else if (num === "2"){
       do{
           var string= prompt("Ingrese texto")
         }
-      while (!string  || !/^[a-zA-Z\s]*$/.test(string)); // valida que solo ingrese  texto
+      while (!string  || !/^[a-zA-Z\s]*$/.test(string)); // valida que solo ingrese  texto y espacio entre texto
 
       var codeDecipher ="";
 
@@ -69,19 +70,19 @@ else if (num === "2"){
             codeDecipher+=letterLower; // concatenamos la nueva palabra
 
         }
-       else if(numberCodeAscii==32){
+       else if(numberCodeAscii==32){ // si el caracter es un espacio vacio
               var space = " ";
-              codeDecipher+=space;
+              codeDecipher+=space; // concatenamos el mismo valor
           }
       }
     return document.write("Texto codificado :" + string  + " ========  "+"Texto original : \n " + codeDecipher ); // muestra la palabra decodificada
-
+// muestra mensaje en la página web Index
   }
 
 decipher(); // llama a la función
 
 }
 
-else {                                  // Si ingresa otra opción no definida
+else {                                  // Si ingresa otra opción no definida muestra una alerta
     alert("Ingrese una opción válida");
 }
